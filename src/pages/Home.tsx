@@ -12,7 +12,7 @@ export const Home = () => {
       <div className="absolute inset-0 z-10">
         <ParticlesBackground />
       </div>
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
+      <div className="absolute inset-0 bg-[url('https://i.imgur.com/2BYcT8l.jpeg')] bg-cover bg-center opacity-10" />
       
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Header */}
