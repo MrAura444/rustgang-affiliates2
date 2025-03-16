@@ -50,8 +50,15 @@ export const Home = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mb-12">
+          <div className="flex flex-col items-center gap-4 mb-12">
             <LeaderboardButton />
+            <Link
+              to="/bonuses"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg hover:from-orange-700 hover:to-red-700 transition-colors"
+            >
+              <Gift className="w-5 h-5" />
+              View Bonuses
+            </Link>
           </div>
 
           {/* Social Links */}
