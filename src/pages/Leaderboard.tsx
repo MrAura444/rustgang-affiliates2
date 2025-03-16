@@ -27,7 +27,7 @@ export const Leaderboard = () => {
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-[#1a0f0f] to-[#2d1810]">
       {/* Animated campfire background */}
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-      
+
       <div className="relative z-10 container mx-auto px-4 py-8">
         {/* Back button */}
         <Link to="/" className="inline-flex items-center text-orange-500 hover:text-orange-400 mb-8">
@@ -63,7 +63,7 @@ export const Leaderboard = () => {
         {/* Leaderboard Section */}
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-orange-500 mb-6">Current Rankings</h2>
-          <div className="bg-black/30 rounded-lg backdrop-blur-sm border border-orange-500/20 overflow-hidden">
+          <div className="bg-black/30 rounded-lg backdrop-blur-sm border border-orange-500/20 overflow-hidden animate-fade-in transition-smooth hover:scale">
             {leaderboardData.map((player, index) => (
               <div
                 key={player.id}
