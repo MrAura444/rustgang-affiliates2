@@ -5,7 +5,7 @@ export const SocialLinks = () => {
   return (
     <div className="flex justify-center gap-6">
       <a
-        href="https://youtube.com/Rustgang"
+        href="https://www.youtube.com/@Rustgang-Casino"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
