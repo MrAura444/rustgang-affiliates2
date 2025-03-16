@@ -1,4 +1,3 @@
-
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -16,7 +15,7 @@ export const ParticlesBackground = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: -1
+          zIndex: 1 // Changed z-index to 1
         },
         particles: {
           number: {

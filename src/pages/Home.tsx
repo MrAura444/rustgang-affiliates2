@@ -7,8 +7,10 @@ import { ParticlesBackground } from '../components/Particles';
 export const Home = () => {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-[#1a0f0f] to-[#2d1810]">
-      <ParticlesBackground />
       {/* Animated campfire background */}
+      <div className="absolute inset-0 z-10">
+        <ParticlesBackground />
+      </div>
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
       
       <div className="relative z-10 container mx-auto px-4 py-8">
