@@ -16,8 +16,9 @@ export const ParticlesBackground = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: 1
+          zIndex: -1
         },
+        fpsLimit: 60,
         particles: {
           number: {
             value: 80,
@@ -76,7 +77,7 @@ export const ParticlesBackground = () => {
           }
         },
         interactivity: {
-          detectsOn: "canvas",
+          detect_on: "canvas",
           events: {
             onHover: {
               enable: true,
@@ -106,8 +107,9 @@ export const ParticlesBackground = () => {
             }
           }
         },
+        detectRetina: true,
         background: {
-          opacity: 0
+          color: "transparent"
         }
       }}
     />
