@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flame, Youtube, Trophy, Users } from 'lucide-react';
+import { Flame, Youtube, Trophy, Users, Gift } from 'lucide-react';
 import { LeaderboardButton } from '../components/LeaderboardButton';
 import { SocialLinks } from '../components/SocialLinks';
 import { ParticlesBackground } from '../components/Particles';
