@@ -1,4 +1,3 @@
-
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -21,20 +20,20 @@ export const ParticlesBackground = () => {
         fpsLimit: 60,
         particles: {
           number: {
-            value: 80,
+            value: 100,
             density: {
               enable: true,
               value_area: 800
             }
           },
           color: {
-            value: ["#ff7b00", "#ff9500", "#ffd700"]
+            value: ["#ff4d00", "#ffa500", "#ff7800"]
           },
           shape: {
             type: "circle"
           },
           opacity: {
-            value: 0.5,
+            value: { min: 0.1, max: 0.5 },
             random: true,
             animation: {
               enable: true,
@@ -44,26 +43,19 @@ export const ParticlesBackground = () => {
             }
           },
           size: {
-            value: 3,
+            value: { min: 1, max: 6 },
             random: true,
             animation: {
               enable: true,
-              speed: 2,
+              speed: 4,
               minimumValue: 0.1,
               sync: false
             }
           },
-          links: {
-            enable: true,
-            distance: 150,
-            color: "#ff7b00",
-            opacity: 0.4,
-            width: 1
-          },
           move: {
             enable: true,
-            speed: 2,
-            direction: "none",
+            speed: 3,
+            direction: "top",
             random: true,
             straight: false,
             outModes: {
@@ -81,29 +73,14 @@ export const ParticlesBackground = () => {
           events: {
             onHover: {
               enable: true,
-              mode: ["grab", "bubble"]
-            },
-            onClick: {
-              enable: true,
-              mode: "push"
+              mode: "repulse"
             },
             resize: true
           },
           modes: {
-            grab: {
-              distance: 140,
-              links: {
-                opacity: 1
-              }
-            },
-            bubble: {
-              distance: 200,
-              size: 12,
-              duration: 2,
-              opacity: 0.8
-            },
-            push: {
-              quantity: 4
+            repulse: {
+              distance: 100,
+              duration: 0.4
             }
           }
         },
