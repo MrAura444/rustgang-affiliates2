@@ -5,7 +5,7 @@ import { Clock } from 'lucide-react';
 const END_TIME = (() => {
   const now = new Date();
   now.setDate(now.getDate() + 3);
-  now.setHours(now.getHours() + 17);
+  now.setHours(now.getHours() + 6);
   return now.getTime();
 })();
 

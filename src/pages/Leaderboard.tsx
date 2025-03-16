@@ -14,12 +14,12 @@ const prizes = [
 
 // Updated leaderboard data with real user scores
 const leaderboardData = [
-  { id: 1, username: "ֆeeⲕ\\ :･ﾟ✧", points: 2434.77 },
-  { id: 2, username: "Hidden", points: 1586.36 },
-  { id: 3, username: "SiddeBror", points: 986.72 },
-  { id: 4, username: "Pigeon国王->trading", points: 223.52 },
-  { id: 5, username: "MonkeyRage", points: 139.29 },
-  { id: 6, username: "K1ller", points: 114.95 },
+  { id: 1, username: "ֆeeⲕ\\ :･ﾟ✧", points: 2445.35 },
+  { id: 2, username: "Hidden", points: 1588.36 },
+  { id: 3, username: "SiddeBror", points: 988.72 },
+  { id: 4, username: "Pigeon国王->trading", points: 223.84 },
+  { id: 5, username: "MonkeyRage", points: 139.33 },
+  { id: 6, username: "K1ller", points: 114.85 },
 ];
 
 export const Leaderboard = () => {
