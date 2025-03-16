@@ -1,3 +1,4 @@
+
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -15,38 +16,62 @@ export const ParticlesBackground = () => {
       options={{
         fullScreen: {
           enable: true,
-          zIndex: 1 // Changed z-index to 1
+          zIndex: 1
         },
         particles: {
           number: {
-            value: 50,
+            value: 80,
             density: {
               enable: true,
               value_area: 800
             }
           },
           color: {
-            value: "#ff7b00"
+            value: ["#ff7b00", "#ff9500", "#ffd700"]
           },
           shape: {
             type: "circle"
           },
           opacity: {
             value: 0.5,
-            random: true
+            random: true,
+            animation: {
+              enable: true,
+              speed: 1,
+              minimumValue: 0.1,
+              sync: false
+            }
           },
           size: {
             value: 3,
-            random: true
+            random: true,
+            animation: {
+              enable: true,
+              speed: 2,
+              minimumValue: 0.1,
+              sync: false
+            }
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#ff7b00",
+            opacity: 0.4,
+            width: 1
           },
           move: {
             enable: true,
             speed: 2,
-            direction: "top",
+            direction: "none",
             random: true,
             straight: false,
             outModes: {
               default: "out"
+            },
+            attract: {
+              enable: true,
+              rotateX: 600,
+              rotateY: 1200
             }
           }
         },
@@ -55,13 +80,29 @@ export const ParticlesBackground = () => {
           events: {
             onHover: {
               enable: true,
-              mode: "repulse"
-            }
+              mode: ["grab", "bubble"]
+            },
+            onClick: {
+              enable: true,
+              mode: "push"
+            },
+            resize: true
           },
           modes: {
-            repulse: {
-              distance: 100,
-              duration: 0.4
+            grab: {
+              distance: 140,
+              links: {
+                opacity: 1
+              }
+            },
+            bubble: {
+              distance: 200,
+              size: 12,
+              duration: 2,
+              opacity: 0.8
+            },
+            push: {
+              quantity: 4
             }
           }
         },
