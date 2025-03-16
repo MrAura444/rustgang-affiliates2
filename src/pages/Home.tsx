@@ -7,7 +7,7 @@ import { ParticlesBackground } from '../components/Particles';
 
 export const Home = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-[#1a0f0f] to-[#2d1810]">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-[#1a1a2e] via-[#2d1810] to-[#16213e] before:absolute before:inset-0 before:bg-[url('https://grainy-gradients.vercel.app/noise.svg')] before:opacity-20 before:mix-blend-overlay">
       {/* Animated campfire background */}
       <div className="absolute inset-0 z-10">
         <ParticlesBackground />
@@ -21,7 +21,7 @@ export const Home = () => {
             <img 
               src="https://i.imgur.com/5semWd2.jpeg" 
               alt="Rustgang Logo" 
-              className="w-48 h-48 object-contain"
+              className="w-48 h-48 object-contain lux-float shimmer-effect rounded-xl shadow-2xl shadow-orange-500/20"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-orange-500 ml-2">RUSTGANG</h1>
